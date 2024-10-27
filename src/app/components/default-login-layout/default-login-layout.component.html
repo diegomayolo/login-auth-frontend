@@ -4,7 +4,9 @@
     <h2>{{ title }}</h2>
     <ng-content></ng-content>
     <div class="btn-container">
-      <button class="btn-primary" (click)="login()">{{ primaryButtonText }}</button>
+      <button class="btn-primary"
+              (click)="login()"
+              [disabled]="disablePrimaryBtn">{{ primaryButtonText }}</button>
       <div class="divider">
         <div></div>
         <span>OR</span>

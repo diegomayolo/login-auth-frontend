@@ -26,7 +26,7 @@ export class LoginComponent {
   constructor(
     private router: Router,
     private loginService: LoginService,
-    private toast: ToastrService
+    private toastService: ToastrService
   )
   {
     this.loginForm = new FormGroup({
@@ -39,8 +39,8 @@ export class LoginComponent {
   {
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe(
       {
-        next: () => this.toast.success("Login successful"),
-        error: () => this.toast.error("Login failed")
+        next: () => this.toastService.success("Login successful"),
+        error: () => this.toastService.error("Login failed")
       }
     )
   }
