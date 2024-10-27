@@ -1,16 +1,16 @@
 <main>
   <section class="form-section">
-    <img src="/src/assets/icons/logo.svg">
+    <img src="../../../assets/icons/logo.svg">
     <h2>{{ title }}</h2>
     <ng-content></ng-content>
     <div class="btn-container">
-      <button class="btn-primary">{{ primaryButtonText }}</button>
+      <button class="btn-primary" (click)="login()">{{ primaryButtonText }}</button>
       <div class="divider">
         <div></div>
         <span>OR</span>
         <div></div>
       </div>
-      <button class="btn-secondary">{{ secondaryButtonText }}</button>
+      <button class="btn-secondary" (click)="signup()">{{ secondaryButtonText }}</button>
     </div>
   </section>
   <section class="main-section">

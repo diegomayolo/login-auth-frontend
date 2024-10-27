@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {ɵEmptyOutletComponent} from "@angular/router";
 
 @Component({
@@ -14,4 +14,16 @@ export class DefaultLoginLayoutComponent {
   @Input() title: string = "";
   @Input() primaryButtonText: string = "";
   @Input() secondaryButtonText: string = "";
+  @Output("login") onLogin = new EventEmitter();
+  @Output("signup") onSignup = new EventEmitter();
+
+  login()
+  {
+    this.onLogin.emit();
+  }
+
+  signup()
+  {
+    this.onSignup.emit();
+  }
 }

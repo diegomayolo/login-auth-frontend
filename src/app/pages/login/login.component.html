@@ -2,6 +2,8 @@
   title="Login into your account"
   primaryButtonText="Login Now"
   secondaryButtonText="Signup Now"
+  (login)="login()"
+  (signup)="signup()"
 >
   <form [formGroup]="loginForm">
     <app-primary-input
