@@ -1,0 +1,5 @@
+* text=auto
+*.html text
+*.ts text
+*.spec.ts text
+*.svg text
