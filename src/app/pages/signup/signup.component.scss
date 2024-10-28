@@ -7,13 +7,4 @@ form
   flex-direction: column;
   gap: 24px;
   margin-bottom: 34px;
-
-  span
-  {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 14px;
-    color: $secondary-color;
-    text-decoration: underline;
-  }
 }

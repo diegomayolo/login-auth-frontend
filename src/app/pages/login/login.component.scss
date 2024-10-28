@@ -13,5 +13,7 @@ form
     font-size: 14px;
     color: $secondary-color;
     text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -1,7 +1,7 @@
 <app-default-login-layout
   title="Sign in and start today!"
-  primaryBtnText="Signup Now"
-  secondaryBtnText="Login Now"
+  primaryButtonText="Signup"
+  secondaryButtonText="Login"
   (login)="login()"
   (signup)="signup()"
   [disablePrimaryBtn]="!signupForm.valid"
@@ -14,7 +14,7 @@
       label="Your name"
       placeholder=""
     >
-      <img src="/assets/icons/mail.svg"/>
+      <img src="/assets/icons/user.svg"/>
     </app-primary-input>
     <app-primary-input
       formControlName="email"
